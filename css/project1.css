@@ -1,0 +1,707 @@
+.project1__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  /* justify-content: space-around; */
+  /* flex-direction: column; */
+  font-family: 'NanumSquare';
+  margin: 250px 0;
+  color: #fff;
+  position: relative;
+  /* z-index: -1; */
+  z-index: 0; /* 왜 코딩효과 코드링크가 안 되지ㅠㅠ */
+}
+
+.project1__title--wrapper {
+  margin-bottom: 80px;
+  line-height: 45px;
+}
+
+.project1__text--subtitle {
+  position: absolute; /* 미디어 뷰포트에 반응하기 위해 */
+  /* left: 0; */
+  font-family: 'NanumMongDor';
+  font-size: 2rem;
+  background: linear-gradient(to right top, #7748ff, #8b46d2);
+  color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
+}
+
+.project1__text--title {
+  position: absolute; /* 미디어 뷰포트에 반응하기 위해 */
+  top: 50px;
+  /* font-family: 'NanumSquareBold'; */
+  font-family: 'NanumSquareExtraBold';
+  font-size: 2.5rem;
+}
+
+.project1__category--wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: 'NanumSquareExtraBold';
+  font-size: 1.2rem;
+  padding-top: 89px;
+}
+
+.project1__sentence--wrapper { /* 컨텐츠 설명(카테고리와 90px 차이남!!) */
+  margin-top: 170px;
+  font-size: 1.2rem;
+}
+
+.project__sentence-bold {
+  font-family: 'NanumSquareExtraBold';
+}
+
+.project1__category1,
+.project1__category1--sentence {
+  margin-bottom: 40px;
+}
+
+
+.project1__category2 {
+  margin-bottom: 150px;
+  padding-top: 5px;
+}
+
+.project1__category2--sentence {
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+
+.project1__category3 {
+  padding-top: 50px;
+  margin-bottom: 230px;
+}
+
+.project1__category3--sentence {
+  list-style: none;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+.project1__category4 {
+  margin-bottom: 50px;
+}
+
+.project1__category4--sentence {
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+
+.project1__contents-img--wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.project1__category4--sentence,
+.project1__category5--sentence {
+  width: 50px;
+  height: 50px;
+}
+
+.project1__gif {
+  width: 400px;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.project1__sentence--wrapper a { /* a는 가로 길이 값은 가질 수 있으니까! */
+  width: 50px;
+}
+
+@media screen and (max-width: 1400px) {
+  .project1__wrapper {
+    /* background-color: rgba(0, 0, 0, 0.163); */
+    margin: 250px 30px;
+  }
+  .project1__gif {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1315px) {
+  .project1__sentence--wrapper {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+    .project1__sentence--wrapper {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1245px) {
+  /* .project1__sentence--wrapper {
+    margin-left: 20px;
+  } */
+
+  .project1__gif {
+    max-width: 370px;
+  }
+  
+}
+
+@media screen and (max-width: 1215px) {
+  .project1__category--wrapper {
+    font-size: 1.1rem;
+    padding-top: 90px;
+  }
+
+  .project1__category3 {
+    padding-top: 52px;
+    margin-bottom: 230px;
+  }
+
+  .project1__sentence--wrapper { /* 컨텐츠 설명(카테고리와 90px 차이남!!) */
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 1155px) {
+  .project1__gif {
+    max-width: 340px;
+    height: 750px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 1126px) {
+  .project1__gif {
+    max-width: 320px;
+    height: 710px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1105px) {
+  .project1__text--title {
+    top: 45px;
+    font-size: 2.4rem;
+  }
+
+  .project1__text--subtitle {
+    font-size: 1.9rem;
+  }
+
+  .project1__category--wrapper {
+    font-size: 1.05rem;
+    padding-top: 89px;
+  }
+
+  .project1__category2 {
+    padding-top: 7px;
+  }
+
+  .project1__category3 {
+    padding-top: 53px;
+    margin-bottom: 230px;
+  }
+
+  .project1__sentence--wrapper {
+    font-size: 1.05rem;
+  }
+
+  .project1__gif {
+    margin-top: 70px;
+  }
+
+}
+
+
+@media screen and (max-width: 1074px) { /* 여기서부터는 태블릿이라 생각하고 미디어쿼리! */
+  .project1__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 300px 0;
+    position: relative;
+  }
+
+  .project1__text--subtitle {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem; /* 다시 처음처럼! */
+  }
+  
+  .project1__text--title {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem; /* 다시 처음처럼! */
+    margin-top: 10px;
+  }
+
+  .project1__category--wrapper,
+  .project1__sentence--wrapper {
+    margin-top: 1000px;
+  }
+  
+  .project1__category--wrapper {
+    margin-top: 910px;
+  }
+
+  .project1__sentence--wrapper {
+    /* margin-top: 1000px; */
+  }
+
+  .project1__gif {
+    position: absolute;
+    /* top: 62%; */
+    /* top: 30%; */
+    top: 520px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    max-width: 340px;
+    height: 750px;
+  }
+  
+}
+
+@media screen and (max-width: 730px) {
+  .project1__wrapper {
+    margin: 300px 15px;
+  }
+}
+
+
+
+@media screen and (max-width: 702px) {
+  .project1__category--wrapper {
+    word-break: keep-all; /* 우와!! 공간에 따라 글자 띄어쓰기가 알아서 되네! */
+    line-height: 20px;
+    margin-top: 907px;
+  }
+
+  .project1__category1 {
+    margin-bottom: 30px;
+  }
+
+  .project1__category1--sentence {
+    margin-bottom: 45px;
+  }
+
+  .project1__category2 {
+    padding-top: 0;
+    margin-bottom: 161px;
+  }
+
+  .project1__category2--sentence {
+    margin-bottom: 45px;
+  }
+
+  .project1__category3 {
+    margin-bottom: 195px;
+  }
+
+  .project1__category4 {
+    margin-bottom: 40px;
+  }
+
+  .project1__category4--sentence {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 606px) {
+  .project1__category3 {
+    margin-bottom: 225px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .project1__category--wrapper {
+    margin-top: 898px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 990px;
+  }
+
+
+  .project1__category2 {
+    margin-bottom: 190px;
+  }
+
+  .project1__gif {
+    top: 500px;
+    max-width: 320px;
+    height: 710px;
+  }
+}
+
+
+@media screen and (max-width: 486px) { /* 모바일 뷰포트 */
+  .project1__category--wrapper {
+    margin-top: 870px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 962px;
+  }
+
+
+  .project1__category2 {
+    margin-bottom: 221px;
+  }
+
+  .project1__gif {
+    top: 490px;
+    max-width: 300px;
+    height: 680px;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .project1__category3 {
+    margin-bottom: 254px;
+  }
+}
+
+
+@media screen and (max-width: 436px) {
+  .project1__text--subtitle {
+    font-size: 1.9rem;
+  }
+  
+  .project1__text--title {
+    top: 40px;
+    font-size: 2.4rem;
+  }
+
+  .project1__category2 {
+    margin-bottom: 249px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .project1__wrapper {
+    margin: 300px 20px;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 860px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 952px;
+  }
+
+  .project1__text--title {
+    top: 40px;
+    font-size: 2.3rem;
+  }
+
+  .project1__category3 {
+    margin-bottom: 285px;
+  }
+
+}
+
+@media screen and (max-width: 410px) {
+  .project1__wrapper {
+    margin: 260px 20px;
+  }
+
+  .project1__text--title {
+    /* top: 40px; */
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .project1__category2 {
+    margin-bottom: 281px;
+  }
+}
+
+@media screen and (max-width: 394px) {
+  .project1__text--title {
+    top: 35px;
+    font-size: 2rem;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 850px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 942px;
+  }
+
+  .project1__gif {
+    top: 470px;
+  }
+}
+
+@media screen and (max-width: 372px) {
+  .project1__category--wrapper {
+    font-size: 1rem;
+  }
+  
+  .project1__sentence--wrapper {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .project1__text--title {
+    top: 35px;
+    font-size: 1.9rem;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 830px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 922px;
+  }
+
+  .project1__gif {
+    top: 450px;
+    max-width: 290px;
+    height: 655px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .project1__category1 {
+    margin-bottom: 29px;
+  }
+  .project1__category2 {
+    margin-bottom: 310px;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .project1__wrapper {
+    margin: 210px 20px;
+  }
+
+  .project1__text--title {
+    /* top: 40px; */
+    font-size: 1.8rem;
+  }
+
+  .project1__text--subtitle {
+    font-size: 1.7rem;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 720px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 812px;
+  }
+
+  .project1__gif {
+    top: 400px;
+    max-width: 270px;
+    height: 570px;
+  }
+}
+
+@media screen and (max-width: 342px) {
+  .project1__category3 {
+    margin-bottom: 314px;
+  }
+}
+
+@media screen and (max-width: 333px) {
+  .project1__wrapper {
+    margin-top: 230px;
+  }
+
+  .project1__text--title {
+    top: 30px;
+    font-size: 1.7rem;
+  }
+
+  .project1__text--subtitle {
+    font-size: 1.6rem;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 710px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 802px;
+  }
+
+  .project1__category3 {
+    margin-bottom: 314px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+
+  .project1__wrapper {
+    margin: 190px 20px;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 640px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 732px;
+  }
+
+  .project1__text--title {
+    top: 30px;
+    font-size: 1.6rem;
+  }
+
+  .project1__text--subtitle {
+    font-size: 1.5rem;
+  }
+
+  .project1__category2 {
+    margin-bottom: 341px;
+  }
+
+  .project1__category3 {
+    margin-bottom: 346px;
+  }
+  
+
+  .project1__gif {
+    top: 370px;
+    max-width: 250px;
+    height: 540px;
+  }
+
+}
+
+@media screen and (max-width: 325px) {
+  .project1__category3 {
+    margin-bottom: 316px;
+  }
+}
+
+@media screen and (max-width: 318px) {
+  .project1__wrapper {
+    margin: 180px 20px;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 630px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 722px;
+  }
+
+  .project1__category3 {
+    margin-bottom: 343px;
+  }
+}
+
+
+
+@media screen and (max-width: 302px) {
+  .project1__wrapper {
+    margin: 160px 20px;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 590px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 682px;
+  }
+  
+  .project1__text--title {
+    top: 25px;
+    font-size: 1.5rem;
+  }
+
+  .project1__text--subtitle {
+    font-size: 1.4rem;
+  }  
+  
+  .project1__gif {
+    top: 350px;
+    max-width: 230px;
+    height: 520px;
+  }
+}
+
+@media screen and (max-width: 299px) {
+  .project1__wrapper {
+    margin: 180px 20px;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 600px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 692px;
+  }
+
+  .project1__category2 {
+    margin-bottom: 370px;
+  }
+
+  .project1__gif {
+    top: 350px;
+  }
+}
+
+@media screen and (max-width: 292px) {
+  .project1__category2 {
+    margin-bottom: 430px;
+  }
+}
+
+@media screen and (max-width: 287px) {
+  .project1__wrapper {
+    margin: 170px 20px;
+  }
+
+  .project1__category--wrapper {
+    margin-top: 560px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 652px;
+  }
+
+  .project1__text--title { 
+    position: absolute;
+    width: 120px;
+    top: 25px;
+    left: 50%;
+  }
+
+  .project1__text--subtitle {
+    position: absolute;
+    width: 95px;
+  } 
+  .project1__gif {
+    top: 320px;
+    max-width: 210px;
+    height: 450px;
+  }
+}
+
+
+@media screen and (max-width: 278px) {
+  .project1__category--wrapper {
+    margin-top: 550px;
+  }
+
+  .project1__sentence--wrapper {
+    margin-top: 642px;
+  }
+
+  .project1__category3 {
+    margin-bottom: 375px;
+  }
+}

@@ -1,51 +1,28 @@
 const buttonImg = document.querySelector(".project1__category4--sentence");
 const popUp = document.querySelector(".project1__popup");
-const show = document.getElementById("show");
-
-
-function buttonClick(){
-  popUp.removeAttribute('id');
-}
-
-buttonImg.addEventListener("click", buttonClick)
-
-
-
 const closeIcon = document.querySelector(".close__btn");
+for (let i = 0; i <= 100; i++){
+  buttonImg.addEventListener('click', function(){
+    // popUp.removeAttribute('id');
+    popUp.style.display = "block"
+    // popUp.style.opacity = "1"
+  });
+}
 
-closeIcon.addEventListener("click", (event) => {
-  event.currentTarget.classList.toggle("active__close__btn")
-  popUp.classList.toggle("active");
-});
-
-
-// if(buttonImg.classList.contains("active") === true) {
-//   popUp.id = "show";
-//   buttonImg.addEventListener("click", buttonClick)
-//   buttonClick()
-// }
-
-// if(buttonImg.classList.contains("active") === true) {
-//   popUp.id = "show";
-//   buttonImg.addEventListener("click", buttonClick)
-//   buttonClick()
-// }
-
-
-// if(document.getElementById("show") !== true) {
-//   popUp.id = "show";
-//   buttonImg.addEventListener("click", buttonClick)
-//   buttonClick()
-// }
-
-
-/* 왜 안되는 걸까ㅠㅠ */
-
-if(document.getElementById("show") === null) {
-  popUp.id = "show";
-  buttonClick()
+for (let i = 0; i <= 100; i++){
+  closeIcon.addEventListener('click', function(event){
+    popUp.style.display = "none"
+    // event.currentTarget.classList.toggle("active__close__btn")
+    // popUp.classList.toggle("active");
+  });
 }
 
 
-buttonImg.addEventListener("click", buttonClick)
+window.onkeyup = function(e) {
+	var key = e.keyCode ? e.keyCode : e.which;
 
+	if(key == 27) {
+		("popUp").fadeOut(90);
+		("body").css({overflow:'scroll'}).unbind('touchmove');
+	}
+}
